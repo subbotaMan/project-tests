@@ -1,13 +1,8 @@
-import capitalize from "../src/capitalize.js";
+import { strict as assert } from "node:assert";
+import capitalize from "./capitalize.js";
 
-const errorMessage = "Тесты не прошли";
-
-if (capitalize("hello") !== "Hello") {
-  throw new Error(errorMessage);
-}
-
-if (capitalize("") !== "") {
-  throw new Error(errorMessage);
-}
+assert.equal(capitalize("hello"), "Hello");
+assert.equal(capitalize(""), "");
+assert.equal(capitalize(123), "Error: data type not string");
 
 console.log("Тесты завершились успешно");
