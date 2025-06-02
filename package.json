@@ -1,3 +1,26 @@
 {
-  "type": "module"
+  "type": "module",
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "tests for hexlet course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subbotaMan/project-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subbotaMan/project-tests/issues"
+  },
+  "homepage": "https://github.com/subbotaMan/project-tests#readme",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.0-beta.3",
+    "jest": "^29.7.0"
+  }
 }
